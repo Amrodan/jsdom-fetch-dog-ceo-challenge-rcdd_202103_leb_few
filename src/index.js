@@ -38,10 +38,18 @@ function addBreed(breed) {
   let ul = document.querySelector('#dog-breeds');
   let li = document.createElement('li');
   li.innerText = breed;
-  // li.style.cursor = 'pointer';
+  li.style.cursor = 'pointer';
   ul.appendChild(li);
-  // li.addEventListener('click', updateColor);
+  li.addEventListener('click', updateColor);
 }
+// function addBreed(breed) {
+//   let ul = document.querySelector('#dog-breeds');
+//   let li = document.createElement('li');
+//   li.innerText = breed;
+//   // li.style.cursor = 'pointer';
+//   ul.appendChild(li);
+//   // li.addEventListener('click', updateColor);
+// }
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
