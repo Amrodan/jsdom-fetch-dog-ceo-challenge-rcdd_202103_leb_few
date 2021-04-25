@@ -30,6 +30,7 @@ fetch(breedUrl)
 .then(res => res.json())
 .then (results => {
   breeds=Object.keys(results.message)
+  console.log(breeds)
 addBreed(breeds)
 
 });
