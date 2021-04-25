@@ -23,15 +23,16 @@ container.appendChild(newImageEl)
 
 let breeds = [];
 function loadBreed() {
- const breedUrl = 'https://dog.ceo/api/breeds/list/all'
- fetch(breedUrl)
-   .then(res => res.json())
-   .then(results => {
+  const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
-     breeds = Object.keys(results.message);
-     updateBreedList(breeds);
-     addBreedSelectListener();
-   });
+fetch(breedUrl)
+
+.then(res => res.json())
+.then (results => {
+  breeds=Object.keys(results.message)
+addBreed()
+
+});
 }
 function addBreed(breed) {
   let ul = document.querySelector('#dog-breeds');
@@ -54,33 +55,33 @@ function addBreed(breed) {
 //     });
 // }
 //
-function updateBreedList(breeds) {
-  let ul = document.querySelector('#dog-breeds');
-  removeChildren(ul);
-  breeds.forEach(breed => addBreed(breed));
-}
+// function updateBreedList(breeds) {
+//   let ul = document.querySelector('#dog-breeds');
+//   removeChildren(ul);
+//   breeds.forEach(breed => addBreed(breed));
+// }
+//
+// function removeChildren(element) {
+//   let child = element.lastElementChild;
+//   while (child) {
+//     element.removeChild(child);
+//     child = element.lastElementChild;
+//   }
+// }
+//
+// function selectBreedsStartingWith(letter) {
+//   updateBreedList(breeds.filter(breed => breed.startsWith(letter)));
+// }
+//
+// function addBreedSelectListener() {
+//   let breedDropdown = document.querySelector('#breed-dropdown');
+//   breedDropdown.addEventListener('change', function (event) {
+//     selectBreedsStartingWith(event.target.value);
+//   });
+// }
+//
 
-function removeChildren(element) {
-  let child = element.lastElementChild;
-  while (child) {
-    element.removeChild(child);
-    child = element.lastElementChild;
-  }
-}
-
-function selectBreedsStartingWith(letter) {
-  updateBreedList(breeds.filter(breed => breed.startsWith(letter)));
-}
-
-function addBreedSelectListener() {
-  let breedDropdown = document.querySelector('#breed-dropdown');
-  breedDropdown.addEventListener('change', function (event) {
-    selectBreedsStartingWith(event.target.value);
-  });
-}
-
-
-
-function updateColor(event) {
-  event.target.style.color = 'palevioletred';
-}
+//
+// function updateColor(event) {
+//   event.target.style.color = 'palevioletred';
+// }
