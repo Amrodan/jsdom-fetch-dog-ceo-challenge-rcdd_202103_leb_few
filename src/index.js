@@ -5,7 +5,7 @@ console.log('%c HI', 'color: firebrick')
 loadImages()
 
  });
-
+ 
 function loadImages() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
@@ -14,8 +14,9 @@ function loadImages() {
       results.message.forEach(image => addImage(image))
     });
 }
-
-function addImage(json) {
+function addImage(dogPicUrl) {
   let container = document.querySelector('#dog-image-container');
-container.innerHTML +=  ` <img src=${[json.message]}`
+let newImageEl = document.createElement('img');
+newImageEl.src=dogPicUrl
+container.appendChild(newImageEl)
 }
