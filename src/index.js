@@ -28,7 +28,7 @@ function loadbreed() {
 fetch(breedUrl)
 
 .then(res => res.json())
-.then (results => { 
+.then (results => {
   breeds=Object.keys(results.message)
 
 });
