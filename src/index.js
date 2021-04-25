@@ -22,7 +22,7 @@ container.appendChild(newImageEl)
 }
 
 let breeds = [];
-function loadbreed(breeds) {
+function loadbreed() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
 fetch(breedUrl)
