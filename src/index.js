@@ -31,6 +31,7 @@ fetch(breedUrl)
 .then (results => {
   breeds=Object.keys(results.message)
 addBreed()
+updateBreedList()
 });
 }
 function addBreed(breed) {
