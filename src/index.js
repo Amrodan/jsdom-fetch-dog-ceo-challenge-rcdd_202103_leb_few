@@ -1,5 +1,6 @@
 
 console.log('%c HI', 'color: firebrick')
+let breeds = [];
 
  document.addEventListener("DOMContentLoaded", function a () {
 loadImages()
@@ -21,7 +22,6 @@ newImageEl.src=dogPicUrl
 container.appendChild(newImageEl)
 }
 
-let breeds = [];
 function loadbreed() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
