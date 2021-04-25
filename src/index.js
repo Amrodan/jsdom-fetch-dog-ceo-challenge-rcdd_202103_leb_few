@@ -89,8 +89,4 @@ function addBreed(breed) {
 //   });
 // }
 //
-
-//
-// function updateColor(event) {
-//   event.target.style.color = 'palevioletred';
-// }
+ 
