@@ -43,8 +43,8 @@ function addBreed(breed) {
   li.innerText = breed;
 
   // li.style.cursor = 'pointer';
-  li.addEventListener('click', function(){
-     event.target.style.color = 'palevioletred';
+  li.addEventListener('click', function(e){
+     e.target.style.color = 'palevioletred';
    });
  }
 
