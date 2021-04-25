@@ -15,7 +15,7 @@ function loadImages() {
     });
 }
 
-function addImage(dogPicUrl) {
+function addImage(json) {
   let container = document.querySelector('#dog-image-container');
 container.innerHTML +=  ` <img src=${json.message}`
 }
