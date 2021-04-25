@@ -53,7 +53,7 @@ function filter() {
 dropdown.addEventListener('change',event {
 let letter= event.target.value
   const filtered =breeds.filter(wordsss => startsWith(letter));
-
+ul.innerHTML = loadBreed(filtered)
 });
  }
 //
