@@ -2,7 +2,10 @@
 // console.log('%c HI', 'color: firebrick')
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 
- // // document.addEventListener("DOMContentLoaded", function a () {
+ document.addEventListener("DOMContentLoaded", function a () {
+loadImages()
+
+ }
 function loadImages() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
