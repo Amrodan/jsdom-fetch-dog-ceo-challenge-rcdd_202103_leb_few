@@ -20,3 +20,13 @@ let newImageEl = document.createElement('img');
 newImageEl.src=dogPicUrl
 container.appendChild(newImageEl)
 }
+
+
+const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+function loadbreed() { 
+fetch(breedUrl).then(res => res.json())
+.then () => {
+  
+}
+
+}
