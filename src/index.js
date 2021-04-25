@@ -48,9 +48,9 @@ function addBreed(breed) {
    li.style.color = 'red';
  });
 }
-
+let dropdown=document.querySelector("#breed-dropdown")
 function filter() {
-  let dropdown=document.querySelector("#breed-dropdown")
+  
   const filtered =breeds.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
 
 }
