@@ -24,7 +24,7 @@ document.getElementsById("dog-breeds")
 let breeds = [];
 function loadbreed(breeds) {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
-  
+
 fetch(breedUrl)
 
 .then(res => res.json())
