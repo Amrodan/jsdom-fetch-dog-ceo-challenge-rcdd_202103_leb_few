@@ -29,7 +29,7 @@ fetch(breedUrl)
 
 .then(res => res.json())
 .then (results => {
- Object.keys(results.message)
+ breeds= Object.keys(results.message)
 addBreed()
 loadbreed();
 });
