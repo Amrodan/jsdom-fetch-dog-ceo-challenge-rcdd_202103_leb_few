@@ -32,7 +32,7 @@ fetch(breedUrl)
   breeds=Object.keys(results.message)
   breeds.forEach(breed => addBreed(breed))
   console.log(breeds)
-
+ 
 
 });
 }
@@ -41,7 +41,7 @@ function addBreed(breed) {
   let ul = document.querySelector('#dog-breeds');
   let li = document.createElement('li');
   li.innerText = breed;
-li.addEventListener('')
+
   // li.style.cursor = 'pointer';
   ul.appendChild(li);
   // li.addEventListener('click', updateColor);
