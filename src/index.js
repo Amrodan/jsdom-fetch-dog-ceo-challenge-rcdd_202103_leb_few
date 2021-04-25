@@ -1,11 +1,11 @@
-// 
+//
 // console.log('%c HI', 'color: firebrick')
-// 
+//
 //  document.addEventListener("DOMContentLoaded", function a () {
 // loadImages()
-// 
+//
 //  });
-// 
+//
 // function loadImages() {
 //   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 //   fetch(imgUrl)
@@ -20,16 +20,16 @@
 // newImageEl.src=dogPicUrl
 // container.appendChild(newImageEl)
 // }
-// 
-// 
+//
+//
 // function loadbreed() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
-// 
+//
 //   document.getElementsById("dog-breeds")
 // fetch(breedUrl)
 // // .then(res => res.json())
 // // .then ((json) => { console.log(json)
 // //
 // // }
-// 
+//
 // }
