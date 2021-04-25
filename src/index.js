@@ -50,10 +50,11 @@ function addBreed(breed) {
 }
 let dropdown=document.querySelector("#breed-dropdown")
 function filter() {
-
-  const filtered =breeds.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
-
-}
+dropdown.addEventListener('change',event { 
+let letter= event.target.value
+  const filtered =breeds.filter(wordsss => startsWith(letter));
+ 
+}})
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
