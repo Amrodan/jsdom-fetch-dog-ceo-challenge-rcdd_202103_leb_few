@@ -33,7 +33,7 @@ fetch(breedUrl)
   breeds.forEach(breed => addBreed(breed))
   console.log(breeds)
 addBreed(breeds)
-color ()
+ 
 });
 }
 
@@ -46,11 +46,7 @@ function addBreed(breed) {
   // li.addEventListener('click', updateColor);
 }
 
- function color () {
-  addEventListener('click',updateColor){
-    li.style.color.red;
-  }
-}
+
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
