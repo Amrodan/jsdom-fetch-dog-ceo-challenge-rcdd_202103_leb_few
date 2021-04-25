@@ -20,7 +20,7 @@ let newImageEl = document.createElement('img');
 newImageEl.src=dogPicUrl
 container.appendChild(newImageEl)
 }
-const breed = document.getElementsById("dog-breeds")
+// const breed = document.getElementsById("dog-breeds")
 let breeds = [];
 function loadbreed(breeds) {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
