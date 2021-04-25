@@ -50,10 +50,10 @@ function addBreed(breed) {
 }
 let dropdown=document.querySelector("#breed-dropdown")
 function filter() {
-dropdown.addEventListener('change',event { 
+dropdown.addEventListener('change',event {
 let letter= event.target.value
   const filtered =breeds.filter(wordsss => startsWith(letter));
- 
+
 }})
 //
  // function loadBreedOptions() {
