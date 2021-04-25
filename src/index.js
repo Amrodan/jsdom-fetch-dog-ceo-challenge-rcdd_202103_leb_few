@@ -1,6 +1,6 @@
 
 console.log('%c HI', 'color: firebrick')
-
+let breeds= [];
  document.addEventListener("DOMContentLoaded", function a () {
 loadImages()
 loadBreed()
@@ -50,6 +50,7 @@ function addBreed(breed) {
 }
 
 function filter() {
+  let dropdown=document.querySelector("#breed-dropdown")
   const filtered =loadBreed.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
 
 }
