@@ -22,34 +22,25 @@ container.appendChild(newImageEl)
 }
 
 let breeds = [];
-function loadbreed() {
-  const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+function loadBreedOptions() {
+ const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+ fetch(breedUrl)
+   .then(res => res.json())
+   .then(results => {
 
-fetch(breedUrl)
-
-.then(res => res.json())
-.then (results => {
-  breeds=Object.keys(results.message)
-
-
-});
+     breeds = Object.keys(results.message);
+     updateBreedList(breeds);
+     addBreedSelectListener();
+   });
 }
 function addBreed(breed) {
   let ul = document.querySelector('#dog-breeds');
   let li = document.createElement('li');
   li.innerText = breed;
-  li.style.cursor = 'pointer';
+  // li.style.cursor = 'pointer';
   ul.appendChild(li);
-  li.addEventListener('click', updateColor);
+  // li.addEventListener('click', updateColor);
 }
-// function addBreed(breed) {
-//   let ul = document.querySelector('#dog-breeds');
-//   let li = document.createElement('li');
-//   li.innerText = breed;
-//   // li.style.cursor = 'pointer';
-//   ul.appendChild(li);
-//   // li.addEventListener('click', updateColor);
-// }
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
