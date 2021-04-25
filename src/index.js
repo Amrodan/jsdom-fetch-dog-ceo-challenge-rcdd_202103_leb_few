@@ -54,7 +54,7 @@ dropdown.addEventListener('change',event {
 let letter= event.target.value
   const filtered =breeds.filter(wordsss => startsWith(letter));
 
-}})
+})}
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
