@@ -29,8 +29,8 @@ function loadBreed() {
    .then(results => {
 
      breeds = Object.keys(results.message);
-
-
+     updateBreedList(breeds);
+     addBreedSelectListener();
    });
 }
 function addBreed(breed) {
