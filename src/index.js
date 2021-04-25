@@ -49,8 +49,10 @@ function addBreed(breed) {
  });
 }
 
+function filter() {
+  const filtered =loadBreed.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
 
-
+}
 //
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
