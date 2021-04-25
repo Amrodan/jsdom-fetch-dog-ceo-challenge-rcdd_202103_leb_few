@@ -30,8 +30,8 @@ fetch(breedUrl)
 .then(res => res.json())
 .then (results => {
   breeds=Object.keys(results.message)
-  breeds.forEach(breed => addBreed(breed))
-  console.log(breeds)
+let lii=  breeds.forEach(breed => addBreed(breed))
+  console.log(lii)
 
 
 });
