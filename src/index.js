@@ -27,9 +27,9 @@ function loadbreed() {
 
   document.getElementsById("dog-breeds")
 fetch(breedUrl)
-.then(res => res.json())
-.then ((json) => { console.log(json))
-
-}
+// .then(res => res.json())
+// .then ((json) => { console.log(json)
+// 
+// }
 
 }
