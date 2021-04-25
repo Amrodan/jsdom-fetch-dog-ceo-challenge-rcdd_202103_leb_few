@@ -42,11 +42,9 @@ function addBreed(breed) {
   let li = document.createElement('li');
   li.innerText = breed;
 
-  li.style.cursor = 'pointer';
+  // li.style.cursor = 'pointer';
   ul.appendChild(li);
-  li.addEventListener('click',function updateColor {
-    event.target.style.color = 'palevioletred';
-  });
+  // li.addEventListener('click', updateColor);
 }
 
 
