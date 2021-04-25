@@ -33,9 +33,10 @@ fetch(breedUrl)
   breeds.forEach(breed => addBreed(breed))
   console.log(breeds)
 addBreed(breeds)
-
+color () 
 });
 }
+
 function addBreed(breed) {
   let ul = document.querySelector('#dog-breeds');
   let li = document.createElement('li');
@@ -43,6 +44,12 @@ function addBreed(breed) {
   // li.style.cursor = 'pointer';
   ul.appendChild(li);
   // li.addEventListener('click', updateColor);
+}
+
+ function color () {
+  addEventListener('click',updateColor){
+    li.style.color.red;
+  }
 }
 //
  // function loadBreedOptions() {
