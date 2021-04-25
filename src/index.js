@@ -33,7 +33,7 @@ fetch(breedUrl)
   breeds.forEach(breed => addBreed(breed))
   console.log(breeds)
 addBreed(breeds)
- 
+
 });
 }
 
