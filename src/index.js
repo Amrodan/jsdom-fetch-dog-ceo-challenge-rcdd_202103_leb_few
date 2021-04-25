@@ -56,5 +56,3 @@ let ul = document.querySelector('#dog-breeds');
 // ul.innerHTML = loadBreed(filtered)
 // });
 //  }
-
- 
