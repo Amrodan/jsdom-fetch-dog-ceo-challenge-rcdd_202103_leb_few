@@ -68,19 +68,19 @@ function removeChildren(element) {
   }
 }
 
-// function selectBreedsStartingWith(letter) {
-//   updateBreedList(breeds.filter(breed => breed.startsWith(letter)));
-// }
-//
-// function addBreedSelectListener() {
-//   let breedDropdown = document.querySelector('#breed-dropdown');
-//   breedDropdown.addEventListener('change', function (event) {
-//     selectBreedsStartingWith(event.target.value);
-//   });
-// }
-//
+function selectBreedsStartingWith(letter) {
+  updateBreedList(breeds.filter(breed => breed.startsWith(letter)));
+}
 
-//
-// function updateColor(event) {
-//   event.target.style.color = 'palevioletred';
-// }
+function addBreedSelectListener() {
+  let breedDropdown = document.querySelector('#breed-dropdown');
+  breedDropdown.addEventListener('change', function (event) {
+    selectBreedsStartingWith(event.target.value);
+  });
+}
+
+
+
+function updateColor(event) {
+  event.target.style.color = 'palevioletred';
+}
