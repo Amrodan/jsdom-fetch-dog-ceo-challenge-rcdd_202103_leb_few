@@ -51,7 +51,7 @@ function addBreed(breed) {
 
 function filter() {
   let dropdown=document.querySelector("#breed-dropdown")
-  const filtered =loadBreed.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
+  const filtered =breeds.filter(wordsss => wordsss.charAt(0) ==="charAt(0)");
 
 }
 //
