@@ -32,7 +32,7 @@ fetch(breedUrl)
   breeds=Object.keys(results.message)
   breeds.forEach(breed => addBreed(breed))
   console.log(breeds)
-
+ 
 
 });
 }
@@ -43,10 +43,9 @@ function addBreed(breed) {
   li.innerText = breed;
 
   // li.style.cursor = 'pointer';
-  // li.addEventListener('click', function(e){
-  //    e.target.style.color = 'palevioletred';
-  //  });
- }
+  ul.appendChild(li);
+  // li.addEventListener('click', updateColor);
+}
 
 
 //
