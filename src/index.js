@@ -48,15 +48,15 @@ let ul = document.querySelector('#dog-breeds');
    li.style.color = 'red';
  });
 }
-// let dropdown=document.querySelector("#breed-dropdown")
-// function filter() {
-// dropdown.addEventListener('change',event {
-// let letter= event.target.value
-//   const filtered =breeds.filter(wordsss => startsWith(letter));
-// ul.innerHTML = loadBreed(filtered)
-// });
-//  }
-//
+let dropdown=document.querySelector("#breed-dropdown")
+function filter() {
+dropdown.addEventListener('change',event {
+let letter= event.target.value
+  const filtered =breeds.filter(wordsss => startsWith(letter));
+ul.innerHTML = loadBreed(filtered)
+});
+ }
+
  // function loadBreedOptions() {
 //   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 //   fetch(breedUrl)
