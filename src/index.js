@@ -60,14 +60,14 @@ function updateBreedList(breeds) {
   breeds.forEach(breed => addBreed(breed));
 }
 
-// function removeChildren(element) {
-//   let child = element.lastElementChild;
-//   while (child) {
-//     element.removeChild(child);
-//     child = element.lastElementChild;
-//   }
-// }
-//
+function removeChildren(element) {
+  let child = element.lastElementChild;
+  while (child) {
+    element.removeChild(child);
+    child = element.lastElementChild;
+  }
+}
+
 // function selectBreedsStartingWith(letter) {
 //   updateBreedList(breeds.filter(breed => breed.startsWith(letter)));
 // }
